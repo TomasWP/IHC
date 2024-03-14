@@ -1,0 +1,15 @@
+#1 User control and freedom - Não é permitido eliminar estações de rádio adicionadas à memoria(desfazer uma ação). 
+SOLUÇÃO: Ao pressionar uma estação na memória, adicionar um simbolo de caixote do lixo de forma a ser possivel a remover a estacao pretendida
+
+#2 Error prevention - Caso o utilizador deseje adicionar uma estação de rádio à memoria, poderá facilmente por distração substituir uma estaçaõ de radio adicionada previamente à memória em vez de adicionar a pretendida a uma vaga na memoria disponivel. 
+SOLUÇÃO: Caso o utilizador selecione uma vaga na memoria já ocupado, o sistema devera questionar se pretende devidamente substituir a estacao atual pela pretendida, caso a vaga esteja vazia, o sistema nao ira questionar o utilizador.
+
+#3 Recognition rather than recall - Adicionar uma estacao de radio a memoria nao é uma tarefa simples e facil de executar, e por isso, o utilizador será forcado a memorizar o metodo como se pode adicionar estacoes à memoria. 
+SOLUÇÃO: Na opcao "Lista" adicionar ao lado  de cada estacao de radio uma estrelinha de forma a que as estacoes sejam mais faceis de guardar na memoria.
+
+#4 Visibility of system status - No painel de energia o gráfico apresentado é de dificil compreensao em relacao aos dados que pretende demonstrar, sem qualquer legenda nem descricao adicional, faz com que a interpretacao dos dados seja dificil para o utilizador. 
+SOLUÇÃO: Alterar a forma como os dados sao apresentados e, se necessario adicionar uma legenda e descricao adicional.
+
+#5 Aesthetic and minimalist design - O design do sistema interativo do carro é bastante simples e minimalista, apenas com as funcionalidades e informações necessarias, faz com que o seu uso por parte do utilizador seja efetuada de forma fácil e rápida.
+
+#6 Flexibility and efficiency of use -  O sistema minimalista serve tanto os utilizadores novos como os experientes, oferecendo opções para simplificar tarefas frequentes(botao A/C) e acelerar a interação para utilizadores experientes, sem sacrificar a usabilidade para os menos experientes.

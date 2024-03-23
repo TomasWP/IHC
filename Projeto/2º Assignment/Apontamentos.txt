@@ -1,0 +1,27 @@
+-home								FEITO
+-telemovel							FEITO
+-musica								FEITO
+	-radio							FEITO
+		-favoritos					FEITO
+		-canais						FEITO
+	-spotify						FEITO
+		-favoritos					FEITO
+		-playlists					FEITO
+-navegação
+	-favoritos
+	-grupos(restaurantes/praias/paisagens)
+	-mapa							FEITO
+	-search
+
+-apps
+	-youtube
+	-Netflix
+	-spotify
+	-etc
+	-defenicoes
+		-ligações
+			-bluetooth
+			-wifi
+		-etc
+	-carro
+-ar condicionado

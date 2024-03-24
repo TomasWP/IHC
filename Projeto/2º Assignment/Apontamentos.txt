@@ -8,8 +8,8 @@
 		-favoritos					FEITO
 		-playlists					FEITO
 -navegação
-	-favoritos
-	-grupos(restaurantes/praias/paisagens)
+	-favoritos						FEITO
+	-guardado(restaurantes/praias/paisagens)		FEITO
 	-mapa							FEITO
 	-search
 

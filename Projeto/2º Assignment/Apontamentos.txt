@@ -7,21 +7,20 @@
 	-spotify						FEITO
 		-favoritos					FEITO
 		-playlists					FEITO
--navegação
+-navegação							FEITO
 	-favoritos						FEITO
 	-guardado(restaurantes/praias/paisagens)		FEITO
 	-mapa							FEITO
-	-search
+	-search							FEITO
 
 -apps
-	-youtube
-	-Netflix
-	-spotify
-	-etc
+	-youtube					
+	-Netflix						FEITO
+	-spotify						FEITO
+	-prime vídeo						FEITO
 	-defenicoes
 		-ligações
 			-bluetooth
 			-wifi
-		-etc
 	-carro
 -ar condicionado

@@ -12,15 +12,15 @@
 	-guardado(restaurantes/praias/paisagens)		FEITO
 	-mapa							FEITO
 	-search							FEITO
-
 -apps
-	-youtube					
+	-youtube						FEITO				
+		-vídeos						FEITO
+		-video player					FEITO
 	-Netflix						FEITO
 	-spotify						FEITO
 	-prime vídeo						FEITO
-	-defenicoes
-		-ligações
-			-bluetooth
-			-wifi
+	-defenicoes						FEITO
+		-bluetooth					FEITO
+		-wifi						FEITO
 	-carro
 -ar condicionado

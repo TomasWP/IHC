@@ -24,3 +24,6 @@
 		-wifi						FEITO
 	-carro
 -ar condicionado
+
+
+Imagens retiradas ate Apps(não incluído)

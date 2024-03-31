@@ -12,7 +12,7 @@
 	-guardado(restaurantes/praias/paisagens)		FEITO
 	-mapa							FEITO
 	-search							FEITO
--apps
+-apps								FEITO
 	-youtube						FEITO				
 		-vídeos						FEITO
 		-video player					FEITO
@@ -22,8 +22,5 @@
 	-defenicoes						FEITO
 		-bluetooth					FEITO
 		-wifi						FEITO
-	-carro
--ar condicionado
-
-
-Imagens retiradas ate Apps(não incluído)
+	-carro							FEITO
+-ar condicionado						FEITO

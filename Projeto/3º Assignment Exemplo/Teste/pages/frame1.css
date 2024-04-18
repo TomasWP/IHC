@@ -1,0 +1,22 @@
+.frame-1 .home-button-1 {
+  background: url('../assets/images/homeButton1.png') 50% / cover no-repeat;
+  width: 115px;
+  height: 119px;
+}
+.frame-1 .home-button-11 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 115px;
+  height: 119px;
+  box-sizing: border-box;
+}
+.frame-1 {
+  background: url('../assets/images/mainFoto1.png') 50% / cover no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 926px 735px 35px 0;
+  width: 1920px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,313 @@
+.background {
+
+    width: 100%; /* Define a largura da imagem como 50% do tamanho original */
+    display: block; /* Para garantir que a margem automática funcione */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.time {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    color: white;
+    position: fixed;
+    bottom: 81%;
+    left: 2.5%;
+    user-select: none;
+}
+
+.date {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    left: 12%;
+    user-select: none;
+}
+
+.temperature {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    right: 8%;
+    user-select: none;
+}
+
+.sun {
+
+    position: fixed;
+    bottom: 88.5%;
+    left: 92.5%;
+}
+
+.bluetooth {
+
+    width: 27px;
+    height: 53px;
+    position: fixed;
+    bottom: 88.7%;
+    left: 84.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.bluetooth-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+
+.close-button {
+    position: fixed;
+    top: 18.5%; /* Distância do topo */
+    right: 16%; /* Distância da esquerda */
+    cursor: pointer;
+    z-index: 9999; /* Para garantir que o botão esteja sempre na parte superior */
+    display: none;
+}
+
+.close-button img {
+    width: auto; /* Define a largura da imagem como automática */
+    height: 45px; /* Define a altura desejada */
+}
+
+
+.map-box {
+
+    width: 35%;
+    height: 69%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 50%; 
+    top: 17%;
+    border-radius: 14px;
+}
+
+.map-box iframe{
+
+    width: 100%;
+    height: 100%;
+}
+
+.nav-button{
+
+    width: 9%;
+    height: 3.5%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 57%; 
+    top: 26%;
+    border-radius: 4px;
+    background-color: rgb(28, 143, 24);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: absolute;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.peugeot-maps{
+
+    width: 16%;
+    height: 12.3%;
+    position: absolute;
+    background-color: white;
+    top: 18%;
+    left: 50.5%;
+    border-radius: 4px;
+}
+
+.peugeot-icon{
+
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    right: 50%;
+}
+
+.peugeot-text{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    color: black;
+    position: absolute;
+    user-select: none;
+    bottom: 30%;
+    left: 52%;
+    line-height: 10%;
+    text-align: center;
+
+}
+
+.white-bar{
+
+    width: 34.5%;
+    height: 1.1%;
+    background-color: white;
+    bottom: 14.025%;
+    position: absolute;
+    right: 15.2%;
+    border-radius: 16px;
+}
+
+.home-radio {
+
+    width: 29.4%;
+    height: 34%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    cursor: pointer;
+    top: 17%;
+    left: 15%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.home-messages {
+
+    width: 29.7%;
+    height: 30.5%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    top: 55.3%;
+    left: 15%;
+    border-radius: 10px;
+}
+
+.line {
+
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    bottom: 8.9%;
+    left: 25%;
+    border-radius: 20px;
+}
+
+.home-selected{
+
+    background-color: white;
+    width: 4%;
+    height: 0.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    left: 28%; 
+    bottom: 9.3%;
+    border-radius: 16px;
+}
+
+.home {
+
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    cursor: pointer;
+    bottom: 1%;
+    left: 28.1%;
+    width: 4%;
+}
+
+.home-img {
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.phone {
+
+    position: absolute;
+    bottom: 1.4%;
+    left: 35.5%;
+    width: 4%;
+    height: 6.8%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.phone-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/;
+}
+
+.music {
+
+    position: absolute;
+    bottom: 1.4%;
+    left: 42.5%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.music-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.car-app {
+
+    position: absolute;
+    bottom: 1.3%;
+    left: 50%;
+    width: 3.3%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.car-app-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.nav {
+
+    position: absolute;
+    bottom: 1.8%;
+    left: 56%;
+    width: 4%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.nav-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.apps {
+
+    position: absolute;
+    bottom: 1.7%;
+    left: 69%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.apps-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.ac {
+
+    position: absolute;
+    bottom: 1.7%;
+    left: 63%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.ac-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}

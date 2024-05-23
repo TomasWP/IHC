@@ -1,0 +1,336 @@
+.background {
+
+    width: 100%; /* Define a largura da imagem como 50% do tamanho original */
+    display: block; /* Para garantir que a margem automática funcione */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.time {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    color: white;
+    position: fixed;
+    bottom: 81%;
+    left: 2.5%;
+    user-select: none;
+}
+
+.date {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    left: 12%;
+    user-select: none;
+}
+
+.temperature {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    right: 8%;
+    user-select: none;
+}
+
+.sun {
+
+    position: fixed;
+    bottom: 88.5%;
+    left: 92.5%;
+}
+
+.bluetooth {
+
+    width: 27px;
+    height: 53px;
+    position: fixed;
+    bottom: 88.7%;
+    left: 84.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.bluetooth-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.music-outside-frame {
+
+    width: 67%;
+    height: 70%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 17%; 
+    top: 15%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-img {
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.logo {
+
+    height: 7%;
+    width: 66.8%;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-logo {
+
+    width: 30%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+    border-radius: 28px;
+    margin-bottom: auto;
+}
+
+.videos{
+
+    position: absolute;
+    top: 28.5%;
+    left: 22%;
+    width: 56.5%;
+    height: 56%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.video1 {
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.video2 {
+
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.video3 {
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.video4 {
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.video5 {
+
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.video6 {
+
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 30%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    cursor: pointer;
+}
+
+.videos-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.return{
+
+    position: absolute;
+    top: 16.5%;
+    left: 18%;
+    width: 4%;
+    height: 7%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+
+}
+
+.return-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.app-subtitle{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    color: white;
+    position: absolute;
+    height: 15%;
+    bottom: 0%;
+    width: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    bottom: 8.9%;
+    left: 25%;
+    border-radius: 20px;
+}
+
+.apps-selected{
+
+    background-color: white;
+    width: 4%;
+    height: 0.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    left: 68.75%; 
+    bottom: 9.3%;
+    border-radius: 16px;
+}
+
+.home{
+
+    position: absolute;
+    bottom: 1.9%;
+    left: 28.4%;
+    width: 3.5%;
+    height: 6.2%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.home-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.phone {
+
+    position: absolute;
+    bottom: 1.4%;
+    left: 35.5%;
+    width: 4%;
+    height: 6.8%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.phone-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/;
+}
+
+.music {
+
+    position: absolute;
+    bottom: 1.4%;
+    left: 42.5%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.music-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.car-app {
+
+    position: absolute;
+    bottom: 1.3%;
+    left: 50%;
+    width: 3.3%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.car-app-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.nav {
+
+    position: absolute;
+    bottom: 1.8%;
+    left: 56%;
+    width: 4%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.nav-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.apps {
+
+    position: absolute;
+    bottom: 0.6%;
+    left: 68.3%;
+    width: 5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.apps-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.ac {
+
+    position: absolute;
+    bottom: 1.7%;
+    left: 63%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.ac-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}

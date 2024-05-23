@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Peugeot</title>
+        <link rel="stylesheet" href="nav-saved-landscapes.css" />
+        <link rel="shortcut icon" href="assets/logoicon.png">                       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="loadLastDestination()">
+        <img class="background" src="assets/background.png">
+        <div class="time">
+            <p>9:41</p>
+        </div>
+
+        <div class="date">
+            <p>Sunday, 25 April</p>
+        </div>
+
+        <div class="temperature">
+            <p>26 ºC</p>
+        </div>
+
+        <div class="sun">
+            <img src="assets/sun.png">
+        </div>
+
+        <div class="close-button" onclick="loadLastDestination()">
+            <img src="assets/finish_route.png" alt="Close Button">
+        </div>
+        
+        <a href="bluetooth.html">            
+            <div class="bluetooth">
+                <img class="bluetooth-img" src="assets/bluetooth.png">
+            </div>
+        </a>
+
+        <div class="music-outside-frame">
+            <img class="music-outside-frame-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="map-box">
+            <iframe id="mapa" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="peugeot-maps">
+            <img class="peugeot-icon" src="assets/logoicon.png">
+            <div class="peugeot-text">
+                <p>Peugeot</p>
+                <p>Maps</p>
+            </div>
+        </div>
+
+        <div class="white-bar"></div>
+
+        <a href="nav.html">
+            <div class="map">
+                <img class="map-img" src="assets/map.png">
+            </div>
+        </a>
+
+        <a href="nav-favorites.html">
+            <div class="favorites">
+                <img class="favorites-img" src="assets/favorites.png">
+            </div>
+        </a>
+
+        <a href="nav-saved.html">
+            <div class="saved">
+                <img class="saved-img" src="assets/saved.png">
+            </div>
+        </a>
+
+        <a href="nav-search.html">
+            <div class="search">
+                <img class="search-img" src="assets/search.png">
+            </div>
+        </a>
+
+        <div class="selection"></div>
+        
+        <div class="selection2"></div>
+
+        <div class="selection3"></div>
+
+        <div class="selection4"></div>
+
+        <div class="favorites-text"><p>Saved > Landscapes</p></div>
+
+        <a href="nav-saved.html">
+            <div class="return">
+                <img class="return-img" src="assets/return.png">
+            </div>
+        </a>
+
+        <div class="favorites-insidebox1">
+            <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="home-favorites">
+            <img class="home-favorites-img" src="assets/salinas.png">
+        </div>
+
+        <div class="home-text"><p>Salinas de Aveiro</p></div>
+        <div class="home-text2"><p>R. Dr. Bernardino Machado, Aveiro, Portugal</p></div>
+
+        <div class="garbage1">
+            <img class="garbage-img" src="assets/garbage.png">
+        </div>
+
+        <div class="favorites-insidebox2">
+            <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="work-favorites">
+            <img class="work-favorites-img" src="assets/palacio cristal.png">
+        </div>
+
+        <div class="work-text"><p>Palácio de Cristal</p></div>
+        <div class="work-text2"><p>R. de Dom Manuel II, Porto, Portugal</p></div>
+
+        <div class="garbage2">
+            <img class="garbage-img" src="assets/garbage.png">
+        </div>
+
+        <div class="favorites-insidebox3">
+            <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="school-favorites">
+            <img class="school-favorites-img" src="assets/Miradouro.png">
+        </div>
+
+        <div class="school-text"><p>Miradouro G Eiffel</p></div>
+        <div class="school-text2"><p>Av. Gustavo Eiffel 168, Porto, Portugal</p></div>
+
+        <div class="garbage3">
+            <img class="garbage-img" src="assets/garbage.png">
+        </div>
+
+        <div class="line">
+            <img src="assets/line.png">
+        </div>
+
+        <div class="nav-selected"></div>
+
+        <a href="home.html">
+            <div class="home">
+                <img class="home-img" src="assets/home selected.png">
+            </div>
+        </a>
+
+        <a href="phone.html">
+            <div class="phone">
+                <img class="phone-img" src="assets/phone.png">
+            </div>
+        </a>
+
+        <a href="radio.html">
+            <div class="music">
+                <img class="music-img" src="assets/music.png">
+            </div>
+        </a>
+
+        <a href="car-app.html">
+            <div class="car-app">
+                <img class="car-app-img" src="assets/logoicon.png">
+            </div>
+        </a>
+
+        <div class="nav">
+            <img class="nav-img" src="assets/nav.png">
+        </div>
+
+        <a href="apps.html">
+            <div class="apps">
+                <img class="apps-img" src="assets/apps.png">
+            </div>
+        </a>
+
+        <a href="ac.html">
+            <div class="ac">
+                <img class="ac-img" src="assets/ac.png">
+            </div>
+        </a>
+        <script>
+            document.querySelector('.home-favorites').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6055.151040839801!2d-8.664487076418375!3d40.639242285141584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd2397f79ff41d4d%3A0x923c83ade411b572!2sSalinas%20de%20Aveiro%2C%20Rua%20Doutor%20Bernardino%20Machado%2C%20Aveiro!3m2!1d40.6448511!2d-8.662744199999999!5e0!3m2!1spt-PT!2spt!4v1714661811977!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+            
+            document.querySelector('.work-favorites').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d386056.0667263839!2d-8.876687677568283!3d40.89243244688554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd24651aa3a065a3%3A0x646cba8e35b01d38!2sJardins%20do%20Pal%C3%A1cio%20de%20Cristal%2C%20Rua%20de%20Dom%20Manuel%20II%2C%20Porto!3m2!1d41.1482682!2d-8.6255165!5e0!3m2!1spt-PT!2spt!4v1714661842480!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+            
+            document.querySelector('.school-favorites').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d386060.11153644614!2d-8.876687677902419!3d40.891739248530584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd246525dae10453%3A0xe7797c4ac3470fc6!2sMiradouro%20G%20Eiffel%2C%20Avenida%20Gustavo%20Eiffel%2C%20Porto!3m2!1d41.1413568!2d-8.6069935!5e0!3m2!1spt-PT!2spt!4v1714661868773!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+            
+            
+            document.querySelector('.home-text').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6055.151040839801!2d-8.664487076418375!3d40.639242285141584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd2397f79ff41d4d%3A0x923c83ade411b572!2sSalinas%20de%20Aveiro%2C%20Rua%20Doutor%20Bernardino%20Machado%2C%20Aveiro!3m2!1d40.6448511!2d-8.662744199999999!5e0!3m2!1spt-PT!2spt!4v1714661811977!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+            
+            document.querySelector('.work-text').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d386056.0667263839!2d-8.876687677568283!3d40.89243244688554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd24651aa3a065a3%3A0x646cba8e35b01d38!2sJardins%20do%20Pal%C3%A1cio%20de%20Cristal%2C%20Rua%20de%20Dom%20Manuel%20II%2C%20Porto!3m2!1d41.1482682!2d-8.6255165!5e0!3m2!1spt-PT!2spt!4v1714661842480!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+            
+            document.querySelector('.school-text').addEventListener('click', function() {
+                var mapa = document.querySelector('.map-box iframe');
+                mapa.src = "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d386060.11153644614!2d-8.876687677902419!3d40.891739248530584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica%2C%203810-193%20Aveiro!3m2!1d40.6331731!2d-8.6594933!4m5!1s0xd246525dae10453%3A0xe7797c4ac3470fc6!2sMiradouro%20G%20Eiffel%2C%20Avenida%20Gustavo%20Eiffel%2C%20Porto!3m2!1d41.1413568!2d-8.6069935!5e0!3m2!1spt-PT!2spt!4v1714661868773!5m2!1spt-PT!2spt";
+                localStorage.setItem('lastDestination', mapa.src);
+                document.querySelector('.close-button').style.display = 'block';
+            });
+
+            function loadLastDestination() {
+                var lastDestination = localStorage.getItem('lastDestination');
+                var mapa = document.getElementById('mapa');
+                
+                // Define o destino padrão
+                var defaultDestination = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8507615035987!2d-8.662068223290213!3d40.63317307140574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica!5e0!3m2!1sen!2spt!4v1714480107300!5m2!1sen!2spt";
+                
+                // Verifica se o último destino armazenado é diferente do destino padrão e se é diferente do destino atual
+                if (lastDestination && lastDestination !== defaultDestination && lastDestination !== mapa.src) {
+                    mapa.src = lastDestination;
+                    document.querySelector('.close-button').style.display = 'block';
+                } else {
+                    // Define o destino padrão
+                    mapa.src = defaultDestination;
+                    // Atualiza o último destino armazenado para todos os mapas
+                    localStorage.setItem('lastDestination', defaultDestination);
+                    document.querySelector('.close-button').style.display = 'none';
+                }
+            }
+            
+            // Chama a função quando a página é carregada
+            window.onload = loadLastDestination;
+        </script>
+        
+    </body>
+</html>

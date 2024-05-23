@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Peugeot</title>
+        <link rel="stylesheet" href="nav-saved.css" />
+        <link rel="shortcut icon" href="assets/logoicon.png">                          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="loadLastDestination()">
+        <img class="background" src="assets/background.png">
+        <div class="time">
+            <p>9:41</p>
+        </div>
+
+        <div class="date">
+            <p>Sunday, 25 April</p>
+        </div>
+
+        <div class="temperature">
+            <p>26 ºC</p>
+        </div>
+
+        <div class="sun">
+            <img src="assets/sun.png">
+        </div>
+
+        <div class="close-button" onclick="loadLastDestination()">
+            <img src="assets/finish_route.png" alt="Close Button">
+        </div>
+        
+        <a href="bluetooth.html">            
+            <div class="bluetooth">
+                <img class="bluetooth-img" src="assets/bluetooth.png">
+            </div>
+        </a>
+
+        <div class="music-outside-frame">
+            <img class="music-outside-frame-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="map-box">
+            <iframe id="mapa" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="peugeot-maps">
+            <img class="peugeot-icon" src="assets/logoicon.png">
+            <div class="peugeot-text">
+                <p>Peugeot</p>
+                <p>Maps</p>
+            </div>
+        </div>
+
+        <div class="white-bar"></div>
+
+        <a href="nav.html">
+            <div class="map">
+                <img class="map-img" src="assets/map.png">
+            </div>
+        </a>
+
+        <a href="nav-favorites.html">
+            <div class="favorites">
+                <img class="favorites-img" src="assets/favorites.png">
+            </div>
+        </a>
+
+        <div class="saved">
+            <img class="saved-img" src="assets/saved.png">
+        </div>
+
+        <a href="nav-search.html">
+            <div class="search">
+                <img class="search-img" src="assets/search.png">
+            </div>
+        </a>
+
+        <div class="selection"></div>
+        
+        <div class="selection2"></div>
+
+        <div class="selection3"></div>
+
+        <div class="selection4"></div>
+
+        <div class="favorites-text"><p>Saved</p></div>
+
+        <a href="nav-saved-beaches.html">
+            <div class="favorites-insidebox1">
+                <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+                <div class="home-favorites">
+                    <img class="home-favorites-img" src="assets/beach.png">
+                </div>
+        
+                <div class="home-text"><p>Beaches</p></div>
+        
+                <div class="garbage1">
+                    <img class="garbage-img" src="assets/garbage.png">
+                </div>
+            </div>
+        </a>
+
+        <a href="nav-saved-restaurants.html">
+            <div class="favorites-insidebox2">
+                <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+                <div class="work-favorites">
+                    <img class="work-favorites-img" src="assets/restaurant.png">
+                </div>
+                <div class="work-text"><p>Restaurants</p></div>
+
+                <div class="garbage2">
+                    <img class="garbage-img" src="assets/garbage.png">
+                </div>
+            </div>
+        </a>
+
+        <a href="nav-saved-landscapes.html">
+            <div class="favorites-insidebox3">
+                <img class="favorites-insidebox-img" src="assets/music-outsite-frame.png">
+                <div class="school-text"><p>Landscapes</p></div>
+                <div class="school-favorites">
+                    <img class="school-favorites-img" src="assets/landscapes.png">
+                </div>
+                <div class="garbage3">
+                    <img class="garbage-img" src="assets/garbage.png">
+                </div>
+            </div>
+        </a>
+
+        <div class="line">
+            <img src="assets/line.png">
+        </div>
+
+        <div class="nav-selected"></div>
+
+        <a href="home.html">
+            <div class="home">
+                <img class="home-img" src="assets/home selected.png">
+            </div>
+        </a>
+
+        <a href="phone.html">
+            <div class="phone">
+                <img class="phone-img" src="assets/phone.png">
+            </div>
+        </a>
+
+        <a href="radio.html">
+            <div class="music">
+                <img class="music-img" src="assets/music.png">
+            </div>
+        </a>
+
+        <a href="car-app.html">
+            <div class="car-app">
+                <img class="car-app-img" src="assets/logoicon.png">
+            </div>
+        </a>
+
+        <div class="nav">
+            <img class="nav-img" src="assets/nav.png">
+        </div>
+
+        <a href="apps.html">
+            <div class="apps">
+                <img class="apps-img" src="assets/apps.png">
+            </div>
+        </a>
+
+        <a href="ac.html">
+            <div class="ac">
+                <img class="ac-img" src="assets/ac.png">
+            </div>
+        </a>
+        <script>
+            function loadLastDestination() {
+                var lastDestination = localStorage.getItem('lastDestination');
+                var mapa = document.getElementById('mapa');
+                
+                // Define o destino padrão
+                var defaultDestination = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8507615035987!2d-8.662068223290213!3d40.63317307140574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2aaafda5eb1%3A0xb7479e7acd5edb6e!2sDETI%20-%20Departamento%20de%20Electr%C3%B3nica%2C%20Telecomunica%C3%A7%C3%B5es%20e%20Inform%C3%A1tica!5e0!3m2!1sen!2spt!4v1714480107300!5m2!1sen!2spt";
+                
+                // Verifica se o último destino armazenado é diferente do destino padrão e se é diferente do destino atual
+                if (lastDestination && lastDestination !== defaultDestination && lastDestination !== mapa.src) {
+                    mapa.src = lastDestination;
+                    document.querySelector('.close-button').style.display = 'block';
+                } else {
+                    // Define o destino padrão
+                    mapa.src = defaultDestination;
+                    // Atualiza o último destino armazenado para todos os mapas
+                    localStorage.setItem('lastDestination', defaultDestination);
+                    document.querySelector('.close-button').style.display = 'none';
+                }
+            }
+            
+            // Chama a função quando a página é carregada
+            window.onload = loadLastDestination;
+        </script>
+    </body>
+</html>

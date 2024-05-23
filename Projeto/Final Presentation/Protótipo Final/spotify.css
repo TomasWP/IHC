@@ -1,0 +1,693 @@
+.background {
+
+    width: 100%; /* Define a largura da imagem como 50% do tamanho original */
+    display: block; /* Para garantir que a margem automática funcione */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.line {
+
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    bottom: 9.1%;
+    left: 25%;
+    height: 1.5%;
+    border-radius: 20px;
+}
+
+.radio-selected{
+
+    background-color: white;
+    width: 4%;
+    height: 0.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    left: 43.1%; 
+    bottom: 9.3%;
+    border-radius: 16px;
+}
+
+.time {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    color: white;
+    position: fixed;
+    bottom: 81%;
+    left: 2.5%;
+    user-select: none;
+}
+
+.date {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    left: 12%;
+    user-select: none;
+}
+
+.temperature {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    position: fixed;
+    bottom: 85.5%;
+    right: 8%;
+    user-select: none;
+}
+
+.sun {
+
+    position: fixed;
+    bottom: 88.5%;
+    left: 92.5%;
+}
+
+.bluetooth {
+
+    width: 27px;
+    height: 53px;
+    position: fixed;
+    bottom: 88.7%;
+    left: 84.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.bluetooth-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.music-outside-frame {
+
+    width: 67%;
+    height: 60%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 17%; 
+    top: 15%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-img {
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.music-outside-frame2 {
+
+    width: 67%;
+    height: 8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 17%; 
+    top: 78%;
+    border-radius: 16px;
+}
+
+.music-outside-frame2-img {
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.search{
+
+    position: absolute;
+    right: 17.5%;
+    top: 80%;
+}
+
+.search-img{
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.time-bar-left{
+
+    width: 4%;
+    height: 4%;
+    left: 29%;
+    position: absolute;
+    bottom: 13.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    color: white;
+    user-select: none;
+}
+
+.time-bar-right{
+
+    width: 4%;
+    height: 4%;
+    right: 32%;
+    position: absolute;
+    bottom: 13.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    color: white;
+    user-select: none;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.404);
+    bottom: 17.5%;
+    left: 33%;
+    width: 31%;
+    height: 0.7%;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute; /* Alterado para relativo para posicionar a barra de progresso filha */
+}
+
+.progress {
+    background-color: white;
+    width: 0; /* Inicialmente a barra de progresso está vazia */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.switch-radio{
+
+    position: absolute;
+    bottom: 15%;
+    width: 3%;
+    height: 6%;
+    overflow: hidden;
+    left: 22%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.switch-radio-img{
+
+    height: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/;
+}
+
+.radio-title{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: white;
+    height: 7%;
+    width: 66.8%;
+    position: absolute;
+    top: 16%;
+    left: 17%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-coldplay {
+
+    width: 22%;
+    height: 37.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    top: 23%;
+    left: 24.6%;
+}
+
+.music-coldplay-img {
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.title-author{
+
+    height: 10%;
+    width: 18%;
+    position: absolute;
+    left: 26.5%;
+    bottom: 32%;
+    justify-content: center;
+    display: flex;
+}
+
+.play {
+
+    position: absolute;
+    height: 6%;
+    bottom: 26.35%;
+    left: 34.7%;
+    width: 2.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.play-img {
+
+    height: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.avancar {
+    position: absolute;
+    bottom: 26.5%;
+    left: 40%;
+    width: 2.8%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.avancar-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.retroceder {
+
+    position: absolute;
+    bottom: 26.5%;
+    left: 29%;
+    width: 2.8%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.retroceder-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.higher-power {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    user-select: none;
+}
+
+.coldplay {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: rgb(168, 163, 163);
+    position: absolute;
+    top: 42%;
+    user-select: none;
+}
+
+.like {
+
+    position: absolute;
+    bottom: 33%;
+    left: 43%;
+    width: 3%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.volume{
+
+    position: absolute;
+    height: 35%;
+    width: 3.5%;
+    top: 27%;
+    left: 18.5%;
+}
+
+.volumeup-img{
+    
+        width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+        cursor: pointer;
+}
+
+.volume-level{
+
+    position: absolute;
+    height: 10%;
+    width: 130%;
+    top: 32.5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    color: white;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -15%;
+}
+
+.volume-down{
+
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    top: 55%;
+}
+
+.volumedown-img{
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+    cursor: pointer;
+}
+
+.mute-button{
+
+    position: absolute;
+    height: 15%;
+    top: 75%;
+}
+
+.mute-img{
+
+    width: 100%;
+    cursor: pointer;
+}
+
+.like-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.music-outside-frame-radio1{
+
+    cursor: pointer;
+    width: 29%;
+    height: 11%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 50%; 
+    top: 23%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-radio2{
+
+    cursor: pointer;
+    width: 29%;
+    height: 11%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 50%; 
+    top: 36%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-radio3{
+
+    cursor: pointer;
+    width: 29%;
+    height: 11%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 50%; 
+    top: 49%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-radio4{
+
+    cursor: pointer;
+    width: 29%;
+    height: 11%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position:absolute; /* para que o botão fique sobre a imagem */
+    left: 50%; 
+    top: 62%;
+    border-radius: 16px;
+}
+
+.music-outside-frame-radios-img{
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.selected{
+
+    background-color: white;
+    top: 24%;
+    width: 0.5%;
+    height: 9.1%;
+    position: absolute;
+    left: 49.95%;
+    border-radius: 3px;
+}
+
+.liked-songs-list{
+    
+    border: 2px solid white;
+    width: 5%;
+    height: 8.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    cursor: pointer;
+    top: 24.1%;
+    left: 51.2%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.liked-songs-list-img{
+
+width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.liked-songs {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 27.5%;
+    left: 58%;
+    height: 3%;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.pop-music-list{
+    
+        border: 2px solid white;
+        width: 5%;
+        height: 8.8%;
+        overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+        position: absolute; /* para que o botão fique sobre a imagem */
+        cursor: pointer;
+        top: 36.9%;
+        left: 51.2%;
+        cursor: pointer;
+        border-radius: 7px;
+}
+
+.pop-music-list-img{
+
+    width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.pop-music {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 40.3%;
+    left: 58%;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 3%;
+}
+
+.playlist-2000s-list{
+    
+    border: 2px solid white;
+    width: 5%;
+    height: 8.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    cursor: pointer;
+    top: 50%;
+    left: 51.2%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.playlist-2000s-list-img{
+
+width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.playlist-2000s {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 52.5%;
+    left: 58%;
+    height: 4%;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.rock-roll-list{
+    
+    width: 5%;
+    height: 8.8%;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+    position: absolute; /* para que o botão fique sobre a imagem */
+    cursor: pointer;
+    top: 63.2%;
+    left: 51.2%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.rock-roll-list-img{
+
+width: 100%;        /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.rock-roll {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 66%;
+    left: 58%;
+    height: 3.5%;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.home{
+
+    position: absolute;
+    bottom: 1.9%;
+    left: 28.4%;
+    width: 3.5%;
+    height: 6.2%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.home-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.phone {
+
+    position: absolute;
+    bottom: 1.4%;
+    left: 35.5%;
+    width: 4%;
+    height: 6.8%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.phone-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/;
+}
+
+.music {
+
+    position: absolute;
+    bottom: 0.65%;
+    left: 42.5%;
+    width: 4.4%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.music-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.car-app {
+
+    position: absolute;
+    bottom: 1.3%;
+    left: 50%;
+    width: 3.3%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.car-app-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.nav {
+
+    position: absolute;
+    bottom: 1.8%;
+    left: 56%;
+    width: 4%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.nav-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.apps {
+
+    position: absolute;
+    bottom: 1.7%;
+    left: 62.5%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.apps-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}
+
+.ac {
+
+    position: absolute;
+    bottom: 1.7%;
+    left: 69%;
+    width: 3.5%;
+    cursor: pointer;
+    overflow: hidden; /* para evitar que a imagem ultrapasse o div */
+}
+
+.ac-img {
+
+    width: 100%;    /*forcar a imagem a ocupar 100% do espaço do div*/
+}

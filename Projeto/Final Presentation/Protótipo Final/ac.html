@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Peugeot</title>
+        <link rel="stylesheet" href="ac.css" />
+        <script src="ac.js"></script>
+        <link rel="shortcut icon" href="assets/logoicon.png">                          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <img class="background" src="assets/background.png">
+        <div class="time">
+            <p>9:41</p>
+        </div>
+
+        <div class="date">
+            <p>Sunday, 25 April</p>
+        </div>
+
+        <div class="temperature">
+            <p>26 ºC</p>
+        </div>
+
+        <div class="sun">
+            <img src="assets/sun.png">
+        </div>
+        
+        <a href="bluetooth.html">            
+            <div class="bluetooth">
+                <img class="bluetooth-img" src="assets/bluetooth.png">
+            </div>
+        </a>
+
+        <div class="music-outside-frame">
+            <img class="music-outside-frame-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="ac-frame"></div>
+        <div class="ac-frame2"></div>
+        <div class="temperature-ac"><p id="temperature-display">18 ºC</p></div>
+
+
+        <div class="temperature-plus" onclick="increaseTemperature()">
+            <img class="temperature-plus-img" src="assets/+.png">
+        </div>
+        
+        <div class="temperature-minus" onclick="decreaseTemperature()">
+            <img class="temperature-minus-img" src="assets/-.png">
+        </div>        
+
+        <div class="ac-text">
+            <p>AC</p>
+        </div>
+
+        <div class="ac-level">
+            <img class="ac-level-img" src="assets/ac-1.png">
+        </div>
+
+        <div class="line">
+            <img src="assets/line.png">
+        </div>
+
+        <div class="fan-plus">
+            <img class="fan-plus-img" src="assets/+.png" onclick="increaseACLevel()">
+        </div>
+    
+        <div class="fan-minus">
+            <img class="fan-minus-img" src="assets/-.png" onclick="decreaseACLevel()">
+        </div>
+
+        <div class="ac-front">
+            <div class="front-window-ac"><p>Front</p></div>
+            <img class="ac-front-img" src="assets/ac front glass.png">
+        </div>
+
+        <div class="ac-back">
+            <div class="back-window-ac"><p>Back</p></div>
+            <img class="ac-back-img" src="assets/ac back glass.png">
+        </div>
+
+        <div class="ac-direction">
+            <img id="ac-direction-img" class="ac-direction-img" src="assets/acdirection1.png"  onclick="toggleACDirection('ac-direction-img')">
+        </div>
+
+        <div class="ac-button" onclick="toggleACImage()">
+            <div class="ac-button-circle"></div>
+            <div class="ac-button-text"><p>A/C</p></div>
+        </div>        
+
+        <div class="button-selected"></div>
+        <div class="button-not-selected"></div>
+        <div class="button-not-selected2"></div>
+
+        <div class="ac-selected"></div>
+
+        <a href="home.html">
+            <div class="home">
+                <img class="home-img" src="assets/home selected.png">
+            </div>
+        </a>
+
+        <a href="phone.html">
+            <div class="phone">
+                <img class="phone-img" src="assets/phone.png">
+            </div>
+        </a>
+
+        <a href="radio.html">
+            <div class="music">
+                <img class="music-img" src="assets/music.png">
+            </div>
+        </a>
+        <a href="car-app.html">
+            <div class="car-app">
+                <img class="car-app-img" src="assets/logoicon.png">
+            </div>
+        </a>
+
+        <a href="nav.html">
+            <div class="nav">
+                <img class="nav-img" src="assets/nav.png">
+            </div>
+        </a>
+
+        <a href="apps.html">
+            <div class="apps">
+                <img class="apps-img" src="assets/apps.png">
+            </div>
+        </a>
+
+        <div class="ac">
+            <img class="ac-img" src="assets/ac.png">
+        </div>
+    </body>
+</html>

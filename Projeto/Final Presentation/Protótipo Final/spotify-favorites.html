@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Peugeot</title>
+        <link rel="stylesheet" href="spotify-favorites.css"/>
+        <script src="spotify-favorites.js"></script>
+        <link rel="shortcut icon" href="assets/logoicon.png">                          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img class="background" src="assets/background.png">
+        <div class="time">
+            <p>9:41</p>
+        </div>
+
+        <div class="date">
+            <p>Sunday, 25 April</p>
+        </div>
+
+        <div class="temperature">
+            <p>26 ºC</p>
+        </div>
+
+        <div class="sun">
+            <img src="assets/sun.png">
+        </div>
+        
+        <a href="bluetooth.html">            
+            <div class="bluetooth">
+                <img class="bluetooth-img" src="assets/bluetooth.png">
+            </div>
+        </a>
+
+        <div class="music-outside-frame">
+            <img class="music-outside-frame-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame2">
+            <img class="music-outside-frame2-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio1">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio2">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio3">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio4">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio5" id ="coldplay-music">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="music-outside-frame-radio6" id="music-the-script">
+            <img class="music-outside-frame-radios-img" src="assets/music-outsite-frame.png">
+        </div>
+
+        <div class="search">
+            <img class="search-img" src="assets/phone-search.png">
+        </div>
+
+        <div class="progress-bar" id="progressBarContainer">
+            <div class="progress" id="progressBar"></div>
+        </div>
+        <p class="time-bar-left" id="currentTime">0:00</p>
+        <p class="time-bar-right" id="duration">0:00</p>
+
+        <a href="radio.html">
+            <div class="switch-radio">
+                <img class="switch-radio-img" src="assets/radio.png">
+            </div>
+        </a>
+
+        <div class="radio-title">
+            <p>SPOTIFY</p>
+        </div>
+
+        <div class="like">
+            <img class="like-img" src="assets/favorite.png">
+        </div>
+
+        <div class="music-coldplay">
+            <img class="music-coldplay-img" id="music-coldplay" src="assets/coldplay album.png">
+        </div>
+
+        <div class="volume">
+            <div class="volume-up" onclick="increaseVolume()">
+                <img class="volumeup-img" src="assets/+.png">
+            </div>
+
+            <div id="volume-level" class="volume-level"></div>
+
+            <div class="volume-down" onclick="decreaseVolume()">
+                <img class="volumedown-img" src="assets/-.png">
+            </div>
+
+            <div class="mute-button" onclick="muteAudio()">
+                <img class="mute-img" id="muteImage" src="assets/volume up.png" alt="Mute">
+            </div>
+        </div>
+
+        <audio id="higher-power" loop>
+            <source src="assets/higher-power.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="title-author">
+            <div class="higher-power">
+                <p id="title">Higher Power</p>
+            </div>
+
+            <div class="coldplay">
+                <p id="author">Coldplay</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="retroceder">
+                <img class="retroceder-img" src="assets/retroceder.png">
+            </div>
+
+            <div class="avancar">
+                <img class="avancar-img" src="assets/avancar.png">
+            </div>
+    
+            <div class="play" onclick="playSong()">
+                <img class="play-img" id="playImage" src="assets/play.png" alt="Play">
+            </div>
+        </div>
+
+        <div class="selected" id="selection"></div>
+
+        <div class="liked-songs-list1">
+            <img class="liked-songs-list-img" src="assets/X_cover.png">
+        </div>
+
+        <div class="liked-song1">
+            <p>Thinking Out Loud</p>
+        </div>
+
+        <div class="liked-autor1">
+            <p>Ed Sheeran</p>
+        </div>
+
+        <div class="liked-songs-list2">
+            <img class="liked-songs-list-img" src="assets/imagine dragons.jpeg">
+        </div>
+
+        <div class="liked-song2">
+            <p>Demons</p>
+        </div>
+
+        <div class="liked-autor2">
+            <p>Imagine Dragons</p>
+        </div>
+
+        <div class="liked-songs-list3">
+            <img class="liked-songs-list-img" src="assets/Vance Joy.png">
+        </div>
+
+        <div class="liked-song3">
+            <p>Riptide</p>
+        </div>
+
+        <div class="liked-autor3">
+            <p>Vance Joy</p>
+        </div>
+
+        <div class="liked-songs-list4">
+            <img class="liked-songs-list-img" src="assets/coldplay.png">
+        </div>
+
+        <div class="liked-song4">
+            <p>Viva La Vida</p>
+        </div>
+
+        <div class="liked-autor4">
+            <p>Coldplay</p>
+        </div>
+        
+        <div id ="coldplay-music">
+            <div class="liked-songs-list5">
+                <img class="liked-songs-list-img" src="assets/coldplay album.png">
+            </div>
+
+            <div class="liked-song5">
+                <p>Higher Power</p>
+            </div>
+
+            <div class="liked-autor5">
+                <p>Coldplay</p>
+            </div>
+
+        </div>
+
+        <div id="music-the-script">
+
+            <div class="liked-songs-list6">
+                <img class="liked-songs-list-img" id="music-the-script" src="assets/the script.png">
+            </div>
+
+            <div class="liked-song6">
+                <p>Superheroes</p>
+            </div>
+
+            <div class="liked-autor6">
+                <p>The Script</p>
+            </div>
+        </div>
+
+        <a href="spotify.html">
+            <div class="return">
+                <img class="return-img" src="assets/return.png">
+            </div>
+        </a>
+        
+        <div class="line">
+            <img src="assets/line.png">
+        </div>
+
+        <div class="radio-selected"></div>
+
+        <a href="home.html">
+            <div class="home">
+                <img class="home-img" src="assets/home selected.png">
+            </div>
+        </a>
+
+        <a href="phone.html">
+            <div class="phone">
+                <img class="phone-img" src="assets/phone.png">
+            </div>
+        </a>
+
+            <div class="music">
+                <img class="music-img" src="assets/music.png">
+            </div>
+
+        <a href="car-app.html">
+            <div class="car-app">
+                <img class="car-app-img" src="assets/logoicon.png">
+            </div>
+        </a>
+
+        <a href="nav.html">
+            <div class="nav">
+                <img class="nav-img" src="assets/nav.png">
+            </div>
+        </a>
+
+        <a href="apps.html">
+            <div class="apps">
+                <img class="apps-img" src="assets/apps.png">
+            </div>
+        </a>
+
+        <a href="ac.html">
+            <div class="ac">
+                <img class="ac-img" src="assets/ac.png">
+            </div>
+        </a>
+    </body>
+</html>
